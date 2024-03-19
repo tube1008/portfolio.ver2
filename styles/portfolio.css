@@ -562,7 +562,7 @@ main .contact .qrCode p .qrtouch {
 }
 main .contact .qrCode p .qr {
 	display: flex; flex-flow: column nowrap;
-	position: absolute; right: 30%; top: 35%; opacity: 1;
+	position: absolute; right: 30%; top: 45%; opacity: 1;
 }
 main .contact .qrCode p .qr img {}
 main .contact .qrCode p .qr span {
