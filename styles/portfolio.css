@@ -1,7 +1,7 @@
 * {scroll-behavior: smooth;}
 body, html {overflow-x: hidden; width: 100%;}
-header {
-}
+body > * {min-width: 1600px;}
+header {}
 header .menuWrap {
 	width: 100%;
 	display: flex; flex-flow: row nowrap;
@@ -557,7 +557,7 @@ main .contact .background  p {
 main .contact .qrCode {}
 main .contact .qrCode p .qrtouch {
 	font-size: 1.75rem; font-weight: 600;
-	position: absolute; right: 25%; top: 31%; rotate: 20deg;
+	position: absolute; right: 25%; top: 40%; rotate: 20deg;
 	animation: pingpong 1s linear infinite alternate-reverse;
 }
 main .contact .qrCode p .qr {
