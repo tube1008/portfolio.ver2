@@ -28,13 +28,12 @@ header .menuWrap .gnb li a:hover {
 	color: #fff;
 	transition: 0.5s;
 }
-main {}
 /* home */
 main .home {
 	height: 100vh;
 }
 main .home h1 {
-	font-size: 13.875rem; font-weight: 600;
+	font-size: 15.875rem; font-weight: 600;
 	font-family: "Alata", sans-serif;
 	color: #2A420A;
 	text-align: center;
@@ -42,8 +41,11 @@ main .home h1 {
 	letter-spacing: 8px;
 }
 main .home .homeBox {
+	width: 2090px;
+    margin: 0 auto;
 	display: flex; flex-flow: row nowrap;
-	padding: 40px 50px;
+	justify-content: space-between;
+	padding: 40px 40px;
 }
 main .home .homeBox .detail {
 	display: flex; flex-flow: column nowrap;
@@ -51,15 +53,15 @@ main .home .homeBox .detail {
 	padding: 0 30px;
 }
 main .home .homeBox .detail .job {
-	font-size: 1.875rem; font-weight: 600;
+	font-size: 3.5rem; font-weight: 600;
 	font-family: "Alata", sans-serif;
 }
 main .home .homeBox .detail .name {
-	font-size: 1.875rem; font-weight: 600;
+	font-size: 3.5rem; font-weight: 600;
 	font-family: "Alata", sans-serif;
 }
 main .home .homeBox .bgimage {
-	padding-left: 310px;
+	padding-right: 25px;
 }
 main .home .homeBox .bgimage img {
 	width: 1100px; height: 550px;
@@ -68,14 +70,17 @@ main .home .homeBox .bgimage img {
 main .about {
 	padding: 60px;
 	height: 100vh;
-	position: relative;
+	/* position: relative; */
 }
 main .about .background {
-	width: 1750px; margin: 0 auto;
+	width: 1600px;
+	margin: 0 auto;
+	margin-top: 7%;
 	background: #fafafa;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 30px;
-	position: absolute; left: 4%; top: 18%;
+	/* position: absolute; 
+	transform: translate(-50%, 0%) */
 }
 main .about .background .title {
 	padding: 40px;
@@ -90,7 +95,6 @@ main .about .background .aboutBox {
 	display: flex; flex-flow: row nowrap;
 	justify-content: center;
 }
-main .about .background .aboutBox .detailPage {}
 main .about .background .aboutBox .detailPage .photo {padding: 0 30px;}
 main .about .background .aboutBox .detailPage .photo img {
 	height: 450px;
@@ -102,64 +106,68 @@ main .about .background .aboutBox .profile {
 }
 main .about .background .aboutBox .profile .top {
 	display: flex; flex-flow: row nowrap;
-	padding: 0 25px 25px 25px;
+	padding: 0 25px;
 }
-main .about .background .aboutBox .profile .top .text01 {}
-main .about .background .aboutBox .profile .top .text01 p {
+main .about .background .aboutBox .profile .top .text p {
 	font-size: 1.75rem;
 	font-family: "Alata", sans-serif;
 	padding:0 50px 20px 0;
 }
-main .about .background .aboutBox .profile .top .text01 p span {
+main .about .background .aboutBox .profile .top .text p span {
 	font-size: 1.5rem;
 }
-main .about .background .aboutBox .profile .top .text02 {}
-main .about .background .aboutBox .profile .top .text02 p {
-	font-size: 1.75rem;
-	font-family: "Alata", sans-serif;
+main .about .background .aboutBox .profile .top .text p {
 	padding-bottom: 20px;
 }
-main .about .background .aboutBox .profile .top .text02 p span {
-	font-size: 1.5rem;
-}
 main .about .background .aboutBox .profile .btm {
-	display: flex; flex-flow:  column nowrap;
-	padding: 25px;
+	display: flex; flex-flow: column nowrap;
+	padding: 30px 25px 0 25px;
 }
-main .about .background .aboutBox .profile .btm .education {
+main .about .background .aboutBox .profile .btm .detail {
 	padding-bottom: 30px;
 }
-main .about .background .aboutBox .profile .btm .education h2 {
+main .about .background .aboutBox .profile .btm .detail h2 {
 	font-size: 1.75rem;
 	font-family: "Alata", sans-serif;
 }
 main .about .background .aboutBox .profile .btm .education p {
 	font-size: 1.5rem; line-height: 1.5;
 }
-main .about .background .aboutBox .profile .btm .certificare {}
-main .about .background .aboutBox .profile .btm .certificare h2 {
-	font-size: 1.75rem;
-	font-family: "Alata", sans-serif;
-}
-main .about .background .aboutBox .profile .btm .certificare p {
+main .about .background .aboutBox .profile .btm .detail p {
 	font-size: 1.5rem;
+}
+main .sm_soft {
+	padding-bottom: 40px;
+}
+main .site_go {
+	font-size: 1.5rem; font-weight: 600; 
+	padding: 13px 26px;
+	border: 1px solid #2A420A;
+	border-radius: 50px;
+}
+main .site_go:hover {
+	transition: 0.3s;
+	background: #2A420A;
+	color: #fff;
 }
 /* skill */
 main .skill {
 	padding: 60px;
 	height: 100vh;
-	position: relative;
 }
 main .skill .background {
-	width: 1750px; margin: 0 auto;
+	width: 1600px; 
+	margin: 0 auto;
+	margin-top: 7%;
 	background: #fafafa;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 30px;
-	position: relative;
-	position: absolute; left: 4%; top: 18%;
+	/* position: relative;
+	position: absolute; left: 4%; top: 18%; */
 }
 main .skill .background .title {
 	padding: 40px;
+	position: relative;
 }
 main .skill .background .title h1 {
 	font-size: 2.5rem; font-weight: 600;
@@ -169,7 +177,7 @@ main .skill .background .title h1 {
 main .skill .background .title span {
 	font-size: 1.5rem; font-weight: 600;
 	font-family: "Alata", sans-serif;
-	position: absolute; left: 70px; top: 110px; rotate: -10deg;
+	position: absolute; left: 110px; top: 100px; rotate: -10deg;
 	animation: pingpong 1s linear infinite alternate-reverse;
 }
 @keyframes pingpong {
@@ -181,8 +189,8 @@ main .skill .background .skillBox {
 }
 main .skill .background .skillBox #skills {
 	display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: repeat(2, auto); 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto); 
     gap: 50px;
 }
 main .skill .background .skillBox #skills .item {
@@ -201,7 +209,7 @@ main .skill .background .skillBox #skills .item span {
 	border-radius: 20px;
 	display: flex; align-items: center;
 	text-align: left;
-	position: absolute; left: -30px; top: -40px; z-index: 999;
+	position: absolute; left: 20px; top: -40px; z-index: 999;
 	line-height: 1.5;
 	opacity: 0;
 }
@@ -216,12 +224,14 @@ main .project {
 	position: relative;
 }
 main .project .background {
-	width: 1750px; margin: 0 auto;
+	width: 1600px; 
+	margin: 0 auto;
+	margin-top: 4%;
 	background: #fafafa;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 30px;
 	position: relative;
-	position: absolute; left: 4%; top: 7%;
+	/* position: absolute; left: 4%; top: 7%; */
 }
 main .project .background .title {
 	padding: 40px;
@@ -231,15 +241,12 @@ main .project .background .title h1 {
 	font-family: "Alata", sans-serif;
 	color: #2A420A;
 }
-main .project .background #projectContainer {}
-main .project .background #projectContainer .myProject {}
 /* project slide1 */
 main .project .background #projectContainer .myProject .project_01 {
 	display: flex; flex-flow: row nowrap;
 	justify-content: center;
 	padding: 50px;
 }
-main .project .background #projectContainer .myProject .project_01 .page {}
 main .project .background #projectContainer .myProject .project_01 .page .detail {
 	padding: 50px;
 }
@@ -315,7 +322,6 @@ main .project .background #projectContainer .myProject .project_02 {
 	justify-content: center;
 	padding: 50px;
 }
-main .project .background #projectContainer .myProject .project_02 .page {}
 main .project .background #projectContainer .myProject .project_02 .page .detail {
 	padding: 50px;
 }
@@ -349,7 +355,7 @@ main .project .background #projectContainer .myProject .project_02 .page .detail
 }
 main .project .background #projectContainer .myProject .project_02 .page .detail .skills p {
 	padding: 5px; border-radius: 10px;
-	background: #eee;
+	background: #eee; margin-right: 10px;
 }
 main .project .background #projectContainer .myProject .project_02 .mainpage {
 	position: relative;
@@ -398,10 +404,11 @@ main .project .background #projectContainer .myProject .project_03 .page .detail
 	background: #eee;
 }
 main .project .background #projectContainer .myProject .project_03 .mainpage {
-	position: relative; right: -20%;
+	position: relative; right: -4%;
+	width: 700px;
 }
 main .project .background #projectContainer .myProject .project_03 .mainpage img {
-	width: 60%;
+	width: 90%;
 }
 main .project .background #projectContainer .myProject .project_03 .mainpage:hover .bg {
 	display: block;
@@ -409,7 +416,7 @@ main .project .background #projectContainer .myProject .project_03 .mainpage:hov
 main .project .background #projectContainer .myProject .project_03 .mainpage .bg {
 	text-align: center; position: absolute; left: 0; top: 0px; 
     background-color: rgba(0, 0, 0, 0.4);
-    width: 60%; height: 99%; border-radius: 20px;
+    width: 90%; height: 100%; border-radius: 20px;
 	display: none;
 }
 main .project .background #projectContainer .myProject .project_03 .mainpage .bg span {
@@ -513,12 +520,14 @@ main .work {
 	position: relative;
 }
 main .work .background {
-	width: 1750px; margin: 0 auto;
+	width: 1600px; 
+	margin: 0 auto;
+	margin-top: 2%;
 	background: #fafafa;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 30px;
 	position: relative;
-	position: absolute; left: 4%; top: 8%;
+	/* position: absolute; left: 4%; top: 8%; */
 }
 main .work .background .title {
 	padding: 40px;
@@ -532,29 +541,18 @@ main .work .background .title p {
 	padding-top: 10px;
 	font-size: 1.3rem; font-weight: 600;
 }
-main .work .background .workPage {}
+
 main .work .background .workPage #workContainer1 {
 	width: 95%; margin: 0 auto;
     overflow: hidden;
 	padding-bottom: 30px; 
 }
-main .work .background .workPage #workContainer1 .workBox {}
-main .work .background .workPage #workContainer1 .workBox .swiper-slide {}
-main .work .background .workPage #workContainer1 .workBox .swiper-slide p {}
-main .work .background .workPage #workContainer1 .workBox .swiper-slide p img {}
-main .work .background .workPage {}
 main .work .background .workPage #workContainer2 {
 	width: 95%; margin: 0 auto;
     overflow: hidden; 
 	padding-bottom: 30px;
 }
-main .work .background .workPage #workContainer2 .workBox {
-	
-}
-main .work .background .workPage #workContainer2 .workBox .swiper-slide {}
-main .work .background .workPage #workContainer2 .workBox .swiper-slide p {}
-main .work .background .workPage #workContainer2 .workBox .swiper-slide p img {}
-main .work .background .typo {}
+main .workDesign23 {text-align: center;}
 main .work .background .typo img {
 	position: absolute; right: 10px; top: 100px;
 }
@@ -562,15 +560,20 @@ main .work .background .typo img {
 main .contact {
 	padding: 60px;
 	height: 100vh;
-	position: relative;
 }
 main .contact .background {
-	width: 1000px; margin: 0 auto;
+	width: 1000px; 
+	margin: 0 auto;
+	margin-top: 7%;
 	background: #fafafa;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 30px;
 	padding: 50px;
-	position: absolute; left: 24%; top: 20%;
+	/* position: absolute; left: 24%; top: 20%; */
+}
+main .contact .background .between {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
 }
 main .contact .background  .title {
 	padding: 40px;
@@ -581,14 +584,13 @@ main .contact .background .title h1 {
 	color: #2A420A;
 }
 main .contact .background .contact_page {
-	padding: 40px;
-	width: 60%;
-	position: relative; left: -150px;
+	padding: 10px;
+	/* position: relative; left: -150px; */
 }
 main .contact .background .contact_page #contact_detail {
 	display: flex; flex-flow: column nowrap;
 	justify-content: center; 
-	position: relative; left: 35%;
+	/* position: relative; left: 35%; */
 }
 main .contact .background .contact_page #contact_detail fieldset {
 	text-align: center;
@@ -604,6 +606,7 @@ main .contact .background .contact_page #contact_detail fieldset label span {
 	text-align: left;
 }
 main .contact .background .contact_page #contact_detail fieldset label #name {
+	width: 300px;
 	border-radius: 5px;
 	padding: 10px 20px;
 }
@@ -632,20 +635,37 @@ main .contact .background .contact_page #contact_detail fieldset #send:hover {
 main .contact .background  p {	
 	font-size: 0.875rem;
 	letter-spacing: 1.5px;
-	position: absolute; bottom: 0;
+	/* position: absolute; bottom: 0; */
 }
-main .contact .qrCode {}
+main .contact .qrCode {width: 450px; position: relative;}
 main .contact .qrCode p .qrtouch {
 	font-size: 1.75rem; font-weight: 600;
-	position: absolute; right: 25%; top: 40%; rotate: 20deg;
+	position: absolute; right: -9%; top: -13%; rotate: 20deg;
 	animation: pingpong 1s linear infinite alternate-reverse;
 }
 main .contact .qrCode p .qr {
 	display: flex; flex-flow: column nowrap;
-	position: absolute; right: 30%; top: 45%; opacity: 1;
+	/* position: absolute; right: 30%; top: 45%; opacity: 1; */
 }
-main .contact .qrCode p .qr img {}
+main .contact .qrCode p .qr img {width: 70%; margin: 0 auto;}
 main .contact .qrCode p .qr span {
 	padding: 10px 15px;
 	text-align: center;
+}
+
+/* work_experience */
+main {margin: 0 auto;}
+main .work {
+	display: flex; flex-flow: row nowrap;
+}
+main .txt {
+	display: flex; flex-flow: column nowrap;
+	justify-content: space-between;
+}
+main .img {
+	width: 600px;
+	height: auto;
+}
+main .img img {
+	width: 600px;
 }
