@@ -55,16 +55,55 @@ let swiper02 = new Swiper('#workContainer2', {
 let swiperContainer03 =document.querySelector('#workContainer3')
 let swiper03 = new Swiper('#workContainer3', {
   // 한 번에 보여줄 슬라이드 수
-  slidesPerView: 1,
+  slidesPerView: 3,
   // 슬라이드 사이의 간격
-  spaceBetween: 1000,
+  spaceBetween: 20,
   // 한 번에 넘길 슬라이드 수
   loop: true,
   autoplay: { delay: 3000, },
-  slidesPerGroup: 1,
+  slidesPerGroup: 1, 
   centeredSlides: true,
   pagination: {   //페이징 사용자 설정
-    el: ".pagination_bullet",   //페이징 태그 클래스 설정 
+    el: ".pagination_bullet",   //페이징 태그 클래스 설정
     type: 'bullets'
   }
   });
+
+let swiperContainer04 =document.querySelector('#workContainer4')
+var swiper04 = new Swiper("#workContainer4", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true
+  },
+  keyboard: {
+    enabled: true
+  },
+  mousewheel: {
+    thresholdDelta: 70
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 2
+    },
+    1560: {
+      slidesPerView: 3
+    }
+  }
+});

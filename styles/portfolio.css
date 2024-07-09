@@ -135,7 +135,7 @@ main .about .background .aboutBox .profile .btm .detail p {
 main .sm_soft {
 	padding-bottom: 40px;
 }
-main .site_go {
+/* main .site_go {
 	font-size: 1.5rem; font-weight: 600; 
 	padding: 13px 26px;
 	border: 1px solid #2A420A;
@@ -145,7 +145,7 @@ main .site_go:hover {
 	transition: 0.3s;
 	background: #2A420A;
 	color: #fff;
-}
+} */
 /* skill */
 main .skill {
 	padding: 60px;
@@ -664,14 +664,47 @@ main .contact .qrCode p .qr span {
 	margin: 0 auto;
 	padding: 100px;
 	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
 }
+.work_container .cm_tit {
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #2A420A;
+}
+.work_container .design_box {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.work_title1 h2{
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+.work_title1 p {
+	display: flex; flex-flow: column nowrap;
+}
+.work_title1 p span {
+	font-size: 1.2rem;
+	color: #777;
+	display: flex; flex-flow: row nowrap;
+	padding-bottom: 5px;
+}
+.work_title1 p span i {font-size: 1.5rem;}
 .work_container .work_box {
-	width: 500px;
 	margin: 0 auto;
+	display: flex; flex-flow: row nowrap;
+	align-items: center;
+}	
+.work_box .design_box {
+	padding: 0 30px;
 }
-.work_container .swiper-slide {
-	
+.work_box .design_box .box {}
+.work_box .design_box .box .img_pop {
+	width: 300px;
 }
+.work_box .design_box .box .img_pop img {width: 300px;}
+.work_box .design_box .box2 .img_pop img {height: 381px;}
 .space {padding: 30px;}
 .space .img {
 	text-align: center;
@@ -682,3 +715,104 @@ main .contact .qrCode p .qr span {
 }
 
 
+/* 작업물 보러가기 버튼 */
+.site{
+    position: relative;
+    display: inline-block;
+	font-size: 1.6rem;
+	padding: 20px 30px;
+    color: #2A420A;
+	font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+.site:hover{
+    background: #3f660b;
+    color: #fff;
+	border-radius: 10px;
+    /* box-shadow: 0 0 3px #2A420A,
+                0 0 15px #2A420A,
+                0 0 30px #2A420A,
+                0 0 50px #2A420A;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+}
+/* .site:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.site:nth-child(2){
+    filter: hue-rotate(110deg);
+} */
+.site span{
+    position: absolute;
+    display: block;
+}
+.site span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,transparent,#2A420A);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.site span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2A420A);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.site span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg,transparent,#2A420A);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.site span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2A420A);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
