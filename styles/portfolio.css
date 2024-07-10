@@ -79,7 +79,7 @@ main .about .background {
 	transform: translate(-50%, 0%) */
 }
 main .about .background .title {
-	padding: 40px;
+	padding: 30px;
 }
 main .about .background .title h1 {
 	font-size: 2.5rem; font-weight: 600;
@@ -87,7 +87,7 @@ main .about .background .title h1 {
 	color: #2A420A;
 }
 main .about .background .aboutBox {
-	padding: 0 50px 50px 50px;
+	padding: 0 35px 35px 35px;
 	display: flex; flex-flow: row nowrap;
 	justify-content: center;
 }
@@ -230,7 +230,7 @@ main .project .background {
 	/* position: absolute; left: 4%; top: 7%; */
 }
 main .project .background .title {
-	padding: 40px;
+	padding: 30px;
 }
 main .project .background .title h1 {
 	font-size: 2.5rem; font-weight: 600;
@@ -241,7 +241,7 @@ main .project .background .title h1 {
 main .project .background #projectContainer .myProject .project_01 {
 	display: flex; flex-flow: row nowrap;
 	justify-content: center;
-	padding: 50px;
+	padding: 35px;
 }
 main .project .background #projectContainer .myProject .project_01 .page .detail {
 	padding: 50px;
