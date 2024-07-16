@@ -31,7 +31,7 @@ let swiper01 = new Swiper('#workContainer1', {
     // 한 번에 보여줄 슬라이드 수
     slidesPerView: 3,
     // 슬라이드 사이의 간격
-    spaceBetween: 200,
+    spaceBetween: 180,
     // 한 번에 넘길 슬라이드 수
     slidesPerGroup: 1,
     loop : true,
@@ -42,9 +42,9 @@ let swiper01 = new Swiper('#workContainer1', {
 let swiperContainer02 =document.querySelector('#workContainer2')
 let swiper02 = new Swiper('#workContainer2', {
     // 한 번에 보여줄 슬라이드 수
-    slidesPerView: 4,
+    slidesPerView: 3,
     // 슬라이드 사이의 간격
-    spaceBetween: 0,
+    spaceBetween: 30,
     // 한 번에 넘길 슬라이드 수
     loop : true,
     autoplay :{delay:2500,},

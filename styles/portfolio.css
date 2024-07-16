@@ -1,6 +1,6 @@
 * {scroll-behavior: smooth;}
 body, html {overflow-x: hidden; width: 100%; }
-/* body > * {min-width: 1600px;} */
+body > * {min-width: 390px;}
 header {}
 header .menuWrap {
 	width: 100%;
@@ -1195,6 +1195,65 @@ main .contact .qrCode p .qr span {
 
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 390px) {
+	header .menuWrap .gnb li a {
+		font-size: 1rem;
+	}
+	main .home h1 {
+		font-size: 3.7rem;
+	}
+	main .about .background .aboutBox .detailPage .photo img {
+		height: 200px;
+	}
+	main .about .background .aboutBox .profile .top {
+		flex-flow: column nowrap;
+	}
+	main .about .background .aboutBox .profile .top .text p {
+		font-size: 1.2rem;
+	}
+	main .about .background .aboutBox .profile .top .text p span {
+		font-size: 1rem;
+	}
+	main .about .background .aboutBox .profile .top .text p span:nth-child(4){
+		width: 50px;
+	}
+	main .about .background .aboutBox .profile .btm .detail h2 {
+		font-size: 1.2rem;
+	}
+	main .about .background .aboutBox .profile .btm .detail p {
+		font-size: 1rem;
+	}
+	.site {
+		font-size: 1rem;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail h2,
+	main .project .background #projectContainer .myProject .project_02 .page .detail h2,
+	main .project .background #projectContainer .myProject .project_03 .page .detail h2 {
+		font-size: 1.2rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .skills {
+		display: none;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .git {
+		margin: 10px;
+	}
+	main .project .background {
+		height: 500px;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail p {
+		display: none;
+	}
+	main .project .background #projectContainer .myProject .project_01 .page .detail p:nth-child(2),
+	main .project .background #projectContainer .myProject .project_01 .page .detail p:nth-child(3) {
+		display: block;
+	}
+	main .project .background .swiper-button-next, main .project .background .swiper-button-prev,
+	main .project .background .swiper-button-next, main .project .background .swiper-button-next {
+		display: none;
+	}
+	.workBox2 .swiper-slide img {
+		padding: 0 10px;
+	}
 }
