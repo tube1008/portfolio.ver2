@@ -1014,8 +1014,6 @@ main .contact .qrCode p .qr span {
 	}
 	main .skill .background .skillBox #skills {
 		gap: 20px;
-		grid-template-columns: none;
-    	grid-template-rows: none;
 		grid-template-areas: "item1 item2 item3"
 							"item4 item5 item7"
 							"item8 item9 item10"
@@ -1030,6 +1028,159 @@ main .contact .qrCode p .qr span {
 	}
 	main .skill .background .skillBox #skills .item {
 		cursor: auto;
+	}
+	main .project {
+		width: 100%;
+		padding: 15px;
+		height: auto;
+	}
+	main .project .background {
+		width: 100%;
+		margin-top: 10%;
+	}
+	main .project .background .title {
+		padding: 20px;
+	}
+	main .project .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .project .background #projectContainer .myProject .project_03,
+	main .project .background #projectContainer .myProject .project_02,
+	main .project .background #projectContainer .myProject .project_01 {
+		flex-flow: column nowrap;
+		padding: 0 20px 20px 20px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail,
+	main .project .background #projectContainer .myProject .project_01 .page .detail {
+		padding: 0 0 20px 0;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail {
+		display: flex; flex-flow: column nowrap;
+		padding: 0px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail h2, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail h2, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail h2 {
+		font-size: 1.5rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail p, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail p, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail p {
+		padding: 10px 0 0 0;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data {
+		padding-top: 20px;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_03 .page .detail .data .git, 
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_02 .page .detail .data .git, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data .plan,
+	main .project .background #projectContainer .myProject .project_01 .page .detail .data .git {
+		font-size: 1rem;
+	}
+	main .project .background #projectContainer .myProject .project_03 .page .detail .skills, 
+	main .project .background #projectContainer .myProject .project_01 .page .detail .skills {
+		margin-top: 30px;
+		display: grid;
+		grid-template-areas: "p p p p p p p p";
+		row-gap: 10px;
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .skills {
+		margin: 20px 0;
+		display: grid;
+		grid-template-areas: "p p p p p p p p p p p p p p p ";
+		row-gap: 10px;
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_02 .mainpage,
+	main .project .background #projectContainer .myProject .project_01 .mainpage {
+		text-align: center;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage {
+		width: 88%;
+	}
+
+	main .project .background #projectContainer .myProject .project_02 .mainpage img,
+	main .project .background #projectContainer .myProject .project_01 .mainpage img {
+		width: 97%; height: 99%;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage .bg,
+	main .project .background #projectContainer .myProject .project_03 .mainpage img{
+		width: 100%; height: 99%;
+	}
+
+	main .project .background #projectContainer .myProject .project_02 .mainpage .bg,
+	main .project .background #projectContainer .myProject .project_01 .mainpage .bg {
+		width: 97%; height: 99%;
+		left: 1.4%;
+	}
+	main .project .background #projectContainer .myProject .project_03 .mainpage .bg span,
+	main .project .background #projectContainer .myProject .project_02 .mainpage .bg span,
+	main .project .background #projectContainer .myProject .project_01 .mainpage .bg span {
+		font-size: 1.5rem;
+	}
+	main .project .background .swiper-button-next,
+	main .project .background .swiper-button-prev {
+		top: 33%;
+	}
+	main .project .background #projectContainer .myProject .project_02 .page .detail .git {
+		width: 95px;
+		font-size: 1rem;
+		margin-top: 20px;
+	}
+	main .work {
+		padding: 15px;
+		height: auto;
+	}
+	main .work .background {
+		width: 100%;
+		margin-top: 7%;
+	}
+	main .work .background .title {
+		padding: 20px;
+	}
+	main .work .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .work .background .title p {
+		font-size: 1rem;
+	}
+	.workBox1 .swiper-slide img {
+		width: 250px;
+	}
+	.workBox2 .swiper-slide img {
+		width: 190px; height: 250px;
+		padding: 0 15px;
+	}
+	main .work .background .typo img {
+		display: none;
+	}
+	main .contact {
+		padding: 15px;
+		height: auto;
+	}
+	main .contact .background {
+		width: 100%;
+		padding: 20px;
+	}
+	main .contact .background .title {
+		padding: 20px;
+	}
+	main .contact .background .title h1 {
+		font-size: 1.5rem;
+	}
+	main .contact .background .contact_page #contact_detail fieldset label span {
+		font-size: 1.2rem;
+	}
+	main .contact .background .between {
+		justify-content: center;
+	}
+	main .contact .qrCode {
+		display: none;
 	}
 }
 
