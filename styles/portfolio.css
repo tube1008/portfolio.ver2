@@ -1,6 +1,7 @@
 * {scroll-behavior: smooth;}
 body, html {overflow-x: hidden; width: 100%; }
-body > * {min-width: 390px;}
+/* body > * {min-width: 390px;} */
+body > * {min-width: 1600px;}
 header {}
 header .menuWrap {
 	width: 100%;
